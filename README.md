@@ -1,1 +1,1 @@
-# rsschool-cv
+https://TolmaSh.github.io/rsschool-cv/cv
