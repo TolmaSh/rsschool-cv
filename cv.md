@@ -35,4 +35,9 @@ Hello! I am Movchan Anatoly, a Web Developer, specialist on Cross Platform, Adap
 - MainAcademy
 - IT-INCUBATOR
 - RS School (in progress)
-
+---
+## Code Example
+#### Write function makeUpperCase.
+```
+function makeUpperCase(str) {return str.toUpperCase();}
+```
