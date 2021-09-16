@@ -1,0 +1,32 @@
+.footer {
+	background-color: $blueBg;
+	.container {
+		align-items: center;
+	}
+	&__github {
+		display: flex;
+		align-items: center;
+		color: rgba(255, 255, 255, 0.623);
+		transition: color 0.4s ease 0s;
+		&:hover {
+			color:#fff;
+		}
+		&-img {
+			font-size: 5rem;
+		}
+		&-text {
+			font-size: 1.5rem;
+			margin-left: 10px;
+		}
+	}
+	&__year {
+		font-size: 1.5rem;
+		color:#fff;
+	}
+	&__img {
+		&-item {
+			width: 80px;
+			height: 60px;
+		}
+	}
+}
