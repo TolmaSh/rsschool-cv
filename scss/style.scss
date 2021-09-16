@@ -1,6 +1,30 @@
 @import "./base/_normalize";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
 
 body {
-	background: #111;
+	height: 100%;
+	background: #333;
 	color:white;
+	font-family: 'Montserrat', sans-serif;
 }
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	@include media (md, max) {
+		padding:0 50px;
+	}
+}
+.main {
+	flex: 1 1 auto;
+}
+
+@import "./layout/header";
+@import "./layout/about";
+@import "./layout/experience";
+@import "./layout/footer";
