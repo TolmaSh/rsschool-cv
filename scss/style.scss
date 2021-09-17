@@ -28,9 +28,6 @@ body {
 		padding:0 50px;
 	}
 }
-.main {
-	flex: 1 1 auto;
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -43,8 +40,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+@import "./components/title";
 @import "./layout/header";
-@import "./layout/about";
-@import "./layout/experience";
+@import "./layout/main";
 @import "./layout/footer";

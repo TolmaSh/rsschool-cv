@@ -1,0 +1,17 @@
+.main {
+	flex: 1 1 auto;
+	padding-bottom: 50px;
+	.container {
+		flex-grow: 1;
+	}
+}
+.about {
+	flex-basis: 35%;
+}
+.experience {
+	flex-basis: 65%;
+}
+@import "./about/information";
+@import "./about/contacts";
+@import "./about/skills";
+@import "./about/courses";

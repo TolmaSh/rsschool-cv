@@ -348,3 +348,11 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+* NULL padding  in UL tag
+*/
+
+ul {
+	padding: 0;
+}

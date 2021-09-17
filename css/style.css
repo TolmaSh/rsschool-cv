@@ -342,6 +342,13 @@ template {
   display: none;
 }
 
+/**
+* NULL padding  in UL tag
+*/
+ul {
+  padding: 0;
+}
+
 html, body {
   font-size: 10px;
 }
@@ -385,12 +392,6 @@ body {
   }
 }
 
-.main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -405,9 +406,29 @@ body {
   overflow: hidden;
 }
 
+.title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: gray;
+}
+
 .header {
   background-color: #2d609b;
   padding: 20px 0;
+}
+
+.header .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__photo {
@@ -443,17 +464,135 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
+  margin-right: 150px;
 }
 
 .header__title-name {
-  font-size: 8rem;
+  font-size: 6rem;
 }
 
 .header__title-position {
-  font-size: 4rem;
+  font-size: 2rem;
   letter-spacing: 10px;
   line-height: 1.8;
   font-weight: 400;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding-bottom: 50px;
+}
+
+.main .container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.about {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+.experience {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+.information__text {
+  font-size: 1.5rem;
+  max-width: 90%;
+  font-weight: 400;
+}
+
+.information__text::first-letter {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.contacts__list {
+  display: -ms-grid;
+  display: grid;
+  font-size: 2rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+}
+
+.contacts__item {
+  list-style-type: none;
+}
+
+.contacts__link {
+  font-size: 1.8rem;
+  color: rgba(17, 17, 17, 0.747);
+}
+
+.contacts__link:hover {
+  color: #111111;
+}
+
+.skills__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.skills__item {
+  list-style: none;
+  border: 3px solid #efefef;
+  text-align: center;
+  padding: 5px;
+  font-size: 1.4rem;
+  color: #4c4c4c;
+  font-weight: 700;
+}
+
+.skills__item--red {
+  color: #99221d;
+}
+
+.courses__img {
+  width: 25px;
+  height: 20px;
+}
+
+.courses__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.courses__information-content {
+  margin-left: 5px;
+}
+
+.courses__item {
+  list-style: none;
+}
+
+.courses__name {
+  color: #3a6ba2;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.courses__position {
+  color: #141414;
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.courses__technology {
+  margin: 5px 0;
+}
+
+.courses__duration {
+  color: #868e90;
 }
 
 .footer {
