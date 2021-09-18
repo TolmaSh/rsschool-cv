@@ -409,7 +409,7 @@ body {
 .title {
   font-size: 3rem;
   text-transform: uppercase;
-  color: #333333;
+  color: #484848;
 }
 
 .title::after {
@@ -499,6 +499,7 @@ body {
 .experience {
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
+  padding-left: 50px;
 }
 
 .information__text {
@@ -593,6 +594,53 @@ body {
 
 .courses__duration {
   color: #868e90;
+}
+
+.abilities__list {
+  padding-left: 15px;
+}
+
+.abilities__item {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.work__item {
+  list-style: none;
+  padding-bottom: 60px;
+}
+
+.work__place {
+  margin: 0;
+  color: #4e4e4e;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.work__duration {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: #484848;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.work__accomplished {
+  margin-top: 10px;
+}
+
+.work__accomplished-item {
+  margin-top: 10px;
+  list-style: inside;
+  font-size: 1.6rem;
+}
+
+.work__accomplished-link {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  color: #333;
 }
 
 .footer {
