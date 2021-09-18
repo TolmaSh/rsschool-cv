@@ -1,0 +1,36 @@
+.work {
+	&__item {
+		list-style: none;
+		padding-bottom: 60px;
+	}
+	&__place {
+		margin: 0;
+		color: #4e4e4e;
+		font-size: 2rem;
+		letter-spacing: 0.3rem;
+	}
+	&__duration {
+		display: inline-block;
+		margin-left: 5px;
+		margin-top: 5px;
+		color: rgb(72, 72, 72);
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+	}
+	&__accomplished {
+		margin-top: 10px;
+		&-item {
+			margin-top: 10px;
+			list-style: inside;
+			font-size: 1.6rem;
+		}
+		&-link {
+			font-size: 1.6rem;
+			text-decoration: underline;
+			color:#333;
+
+		}
+	}
+
+}

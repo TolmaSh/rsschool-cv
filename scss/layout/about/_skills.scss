@@ -1,0 +1,18 @@
+.skills {
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+	}
+	&__item {
+		list-style: none;
+		border: 3px solid #efefef;
+		text-align: center;
+		padding: 5px;
+		font-size: 1.4rem;
+		color: #4c4c4c;
+		font-weight: 700;
+		&--red {
+			color:#99221d;
+		}
+	}
+}
