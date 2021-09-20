@@ -8,6 +8,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/stackoverflow-light.min.css">
 		<link rel="stylesheet" href="./css/style.css">
     <title>Movchan Anatoly CV</title>
 </head>
@@ -22,22 +23,71 @@
 					<span class="header__title-name">Movchan Anatoly</span>
 					<span class="header__title-position">FrontEnd Developer</span>
 				</h1>
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="_active">
+								<a data-goto=".about" href="#" class="menu__link">About Me</a>
+								<span class="menu__arrow"></span>
+								<ul class="menu__sub-list">
+									<li>
+										<a data-goto=".language" href="#" class="menu__sub-link">Languages</a>
+									</li>
+									<li>
+										<a data-goto=".contacts" href="#" class="menu__sub-link">Contacts</a>
+									</li>
+									<li>
+										<a data-goto=".skills" href="#" class="menu__sub-link">Skills</a>
+									</li>
+									<li>
+										<a data-goto=".courses" href="#" class="menu__sub-link">Courses</a>
+									</li>
+								</ul>
+							</li>
+							<li class="_active">
+								<a href="#" class="menu__link">Experience</a>
+								<span class="menu__arrow"></span>
+								<ul class="menu__sub-list">
+									<li>
+										<a data-goto=".abilities" href="#" class="menu__sub-link">Main Skills</a>
+									</li>
+									<li>
+										<a data-goto=".work" href="#" class="menu__sub-link">Work Experience</a>
+									</li>
+									<li>
+										<a data-goto=".code" href="#" class="menu__sub-link">Code Example</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
 		<main class="main">
 			<div class="container">
 				<aside class="about">
-					<section class="about__information information">
-						<h2 class="information__title title">About me</h2>
+					<section class="information">
+						<h2 class="title">About me</h2>
 						<p class="information__text">A professional developer with experience in website development of different levels of complexity.</p>
 						<p class="information__text">In my spare time, I add new relevant information and skills to my knowledge.</p>
-						<p class="information__text">I take full responsibility and responsibility for my work.</p>
+						<p class="information__text">I`m doing my work with dedication and responsibility.</p>
 					</section>
-					<section class="about__contacts contacts">
-						<h2 class="contacts__title title">Contacts</h2>
+					<section class="language">
+						<h2 class="title">Languages</h2>
+						<ul class="language__list">
+							<li class="language__item"><span>Ukraine & Russian</span> - native</li>
+							<li class="language__item"><span>English</span> - A1/2</li>
+						</ul>
+					</section>
+					<section class="contacts">
+						<h2 class="title">Contacts</h2>
 						<ul class="contacts__list">
 							<li class="contacts__item">
-								<a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%B5%D0%B2" class="contacts__link">
+								<a class="contacts__link" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%B5%D0%B2"  target="_blank">
 									<i class="fas fa-map-marker-alt"></i>
 									<span>Kiev</span>
 								</a>
@@ -49,19 +99,19 @@
 								</a>
 							</li>
 							<li class="contacts__item">
-								<a class="contacts__link" href="https://github.com/TolmaSh">
+								<a class="contacts__link" href="https://github.com/TolmaSh" target="_blank">
 									<i class="fab fa-github-square"></i>
 									<span>TolmaSh</span>
 								</a>
 							</li>
 							<li class="contacts__item">
-								<a class="contacts__link" href="https://t.me/movchn">
+								<a class="contacts__link" href="https://t.me/movchn" target="_blank">
 									<i class="fab fa-telegram"></i>
 									<span>movchn</span>
 								</a>
 							</li>
 							<li class="contacts__item">
-								<a class="contacts__link" href="https://www.linkedin.com/in/anatoly-movchan/">
+								<a class="contacts__link" href="https://www.linkedin.com/in/anatoly-movchan/" target="_blank">
 									<i class="fab fa-linkedin"></i>
 									<span>anatoly-movchan</span>
 								</a>
@@ -74,8 +124,8 @@
 							</li>
 						</ul>
 					</section>
-					<section class="about__skills skills">
-						<h2 class="skills__title title">Skills</h2>
+					<section class="skills">
+						<h2 class="title">Skills</h2>
 						<ul class="skills__list">
 							<li class="skills__item skills__item--red">HTML5</li>
 							<li class="skills__item skills__item--red">CSS3</li>
@@ -94,8 +144,8 @@
 							<li class="skills__item">GIT</li>
 						</ul>
 					</section>
-					<section class="about__courses courses">
-						<h2 class="courses__title title">Courses</h2>
+					<section class="courses">
+						<h2 class="title">Courses</h2>
 						<ul class="courses__list">
 							<li class="courses__item">
 								<h3 class="courses__name">IT-INCUBATOR</h3>
@@ -124,8 +174,8 @@
 				</aside>
 				<article class="experience">
 					<h2 class="visually-hidden">Experience</h2>
-					<section class="experience__abilities abilities">
-						<h2 class="abilities__title title">Main Skills</h2>
+					<section class="abilities">
+						<h2 class="title">Main Skills</h2>
 						<ul class="abilities__list">
 							<li class="abilities__item">Development site (landing , multiple-page website) using different technologies </li>
 							<li class="abilities__item">Mobile-First, Pixel-Perfect , Adaptive , Responsive layout</li>
@@ -137,18 +187,18 @@
 							<li class="abilities__item">Basic knowledge WordPress</li>
 						</ul>
 					</section>
-					<section class="experience__work work">
-						<h2 class="work__title title">Work Experience</h2>
+					<section class="work">
+						<h2 class="title">Work Experience</h2>
 						<ul class="work__list">
 							<li class="work__item">
 								<h3 class="work__place">FREELANCE</h3>
 								<span class="work__duration">June 2020 - Present time</span>
 								<ul class="work__accomplished">
 									<li class="work__accomplished-item">
-										<a href="https://www.youtube.com/watch?v=5kbjXMzyR6k" class="work__accomplished-link">Layout design on React to evaluate participants at the conference "Career Today 2021"</a>
+										<a class="work__accomplished-link" href="https://www.youtube.com/watch?v=5kbjXMzyR6k"  target="_blank">Layout design on React to evaluate participants at the conference "Career Today 2021"</a>
 									</li>
 									<li class="work__accomplished-item">
-										<a href="http://bmp-html.genshtab.by" class="work__accomplished-link">Layout two pages for medical web-site</a>
+										<a class="work__accomplished-link" href="http://bmp-html.genshtab.by" target="_blank">Layout two pages for medical web-site</a>
 									</li>
 								</ul>
 							</li>
@@ -159,7 +209,44 @@
 									<li class="work__accomplished-item">HTML/CSS Mentor - Code Review student , assistance and explanation in complex and incomprehensible situations during development.</li>
 								</ul>
 							</li>
+							<li class="work__item">
+								<h3 class="work__place">PET-PROJECT</h3>
+								<figure class="work__project">
+									<a class="work__project-link" href="https://tolmash.github.io/Movie-57-React-Redux/" target="_blank">
+										<img class="work__project-img" src="./img/Movie-57.png" alt="Movie-57 - Video Service">
+									</a>
+									<figcaption class="work__project-description"><span>Movie-57</span> - Pet-project of an online cinema on React, which, through the API, pulls up current films, their description, rating and release date. I connected the Redux state manager and through it it is possible to add movies to favorites (localstorage) and remove them from favorites.</figcaption>
+								</figure>
+								<figure class="work__project">
+									<a class="work__project-link" href="https://tolmash.github.io/HelyFly/" target="_blank">
+										<img class="work__project-img" src="./img/HelyFly.png" alt="HelyFly - photo shoot when flying">
+									</a>
+									<figcaption class="work__project-description"><span>HelyFly</span> - Landing page on the theme of an exclusive photo shoot when flying in a helicopter. Technolohy: HTML,CSS[SCSS], SVG SPRITE , JS,  SWIPER.JS , LIGHTGALLERY.JS </figcaption>
+								</figure>
+								<figure class="work__project">
+									<a class="work__project-link" href="https://tolmash-smoothie.netlify.app/" target="_blank">
+										<img class="work__project-img" src="./img/Smoothie.png" alt="Smoothie">
+									</a>
+									<figcaption class="work__project-description"><span>Smoothie</span> - Landing page on the theme of an organic fresh foods (smoothie). Technolohy: HTML,CSS[LESS], JS </figcaption>
+								</figure>
+							</li>
 						</ul>
+					</section>
+					<section class="code">
+						<h2 class="title">Code Example</h2>
+						<pre class="code__text"><code class="language-javascript">function makeUpperCase(str) {
+	let output = '';
+
+	for (let i = 0; i &lt; str.length; i++) {
+		const charCode = str[i].charCodeAt(0);
+		const chr = (charCode >= 97 && charCode &lt;= 122) ? String.fromCharCode(charCode - 32) : str[i];
+
+		output += chr;
+	}
+
+	return output;
+}
+					</code></pre>
 					</section>
 				</article>
 			</div>
@@ -177,5 +264,8 @@
 			</div>
 		</footer>
 	</div>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<script src="./js/script.js"></script>
 </body>
 </html>

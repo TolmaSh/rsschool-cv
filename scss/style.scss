@@ -3,12 +3,18 @@
 @import "./abstracts/mixins";
 html,body {
 	font-size: 10px;
+	@include media (xss, max) {
+		font-size: 9px;
+	}
 }
 body {
 	height: 100%;
 	background: #333;
 	color:#111;
 	font-family: 'Montserrat', sans-serif;
+}
+body._lock {
+	overflow: hidden;
 }
 .wrapper {
 	min-height: 100%;
@@ -26,6 +32,12 @@ body {
 	padding: 0 50px;
 	@include media (md, max) {
 		padding:0 50px;
+	}
+	@include media (ms, max) {
+		flex-direction: column;
+	}
+	@include media (sm, max) {
+		padding: 0 15px;
 	}
 }
 .visually-hidden {

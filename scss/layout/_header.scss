@@ -3,6 +3,9 @@
 	padding: 20px 0;
 	.container {
 		align-items: center;
+		@include media (sm, max) {
+			padding: 10px 0;
+		}
 	}
 	&__photo {
 		position: relative;
@@ -28,14 +31,36 @@
 		align-items: center;
 		text-transform: uppercase;
 		margin-right: 150px;
+		@include media (md, max) {
+			margin: 0;
+			padding-top: 15px;
+		}
 		&-name {
 			font-size: 6rem;
+			@include media (sm, max) {
+				font-size: 5rem;
+
+			}
+			@include media (xs, max) {
+				font-size: 3.3rem;
+			}
+			@include media (xss, max) {
+				font-size: 3rem;
+			}
 		}
 		&-position {
 			font-size: 2rem;
-			letter-spacing: 10px;
+			letter-spacing: 1rem;
 			line-height: 1.8;
 			font-weight: 400;
+			@include media (xs, max) {
+				letter-spacing: 0.4rem;
+			}
+			@include media (xss, max) {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
+
+@import "../components/menu";

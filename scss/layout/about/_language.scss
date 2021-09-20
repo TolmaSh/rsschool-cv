@@ -1,0 +1,12 @@
+.language {
+	&__list {
+		list-style: none;
+		font-size: 1.5rem;
+	}
+	&__item {
+		line-height: 2.5rem;
+		span {
+			font-weight: 600;
+		}
+	}
+}
