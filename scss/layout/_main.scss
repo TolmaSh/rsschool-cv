@@ -7,10 +7,17 @@
 }
 .about {
 	flex-basis: 35%;
+	@include media (ms, max) {
+		flex-basis: 100%;
+	}
 }
 .experience {
 	flex-basis: 65%;
 	padding-left: 50px;
+	@include media (ms, max) {
+		padding:0;
+		flex-basis: 100%;
+	}
 }
 @import "./about/information";
 @import "./about/language";

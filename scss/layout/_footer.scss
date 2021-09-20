@@ -1,7 +1,11 @@
 .footer {
 	background-color: $blueBg;
+	padding: 10px 0;
 	.container {
 		align-items: center;
+		@include media (ms, max) {
+		flex-direction: row;
+		}
 	}
 	&__github {
 		display: flex;
@@ -13,6 +17,9 @@
 		}
 		&-img {
 			font-size: 5rem;
+			@include media (xss, max) {
+				font-size: 4rem;
+			}
 		}
 		&-text {
 			font-size: 1.5rem;
@@ -22,11 +29,16 @@
 	&__year {
 		font-size: 1.5rem;
 		color:#fff;
+
 	}
 	&__img {
 		&-item {
 			width: 80px;
 			height: 60px;
+			@include media (xss, max) {
+				width: 60px;
+				height: 40px;
+			}
 		}
 	}
 }

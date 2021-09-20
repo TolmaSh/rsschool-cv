@@ -38,9 +38,15 @@
 		align-items: center;
 		justify-content: center;
 		margin-top: 25px;
+		@include media (xs, max) {
+
+		}
 		&-link {
 			display: block;
 			transition: opacity 0.5s ease;
+			@include media (xss, max) {
+				transform: scale(1.2);
+			}
 			&:hover {
 				opacity: 0.5;
 			}
